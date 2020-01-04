@@ -87,7 +87,7 @@ describe('pipeline factory', () => {
     pp.next(builder.element('fakesrc', { 'num-buffers': 10 }))
       .next(builder.caps('video/x-raw', { width: [640, 'int'], height: 220 }))
       .next(builder.element('fakesink'));
-    const gstProcess = pp.execute({ debug: true });
+    const gstProcess = pp.execute();
 
     return new Promise((resolve, reject) => {
       gstProcess.on('exit', code => {
@@ -128,7 +128,7 @@ describe('pipeline factory', () => {
       .next(builder.element('queue'))
       .next(output1.link('output1'));
 
-    const gstProcess = entryPipe.execute({ debug: true });
+    const gstProcess = entryPipe.execute();
 
     return new Promise((resolve, reject) => {
       gstProcess.on('exit', code => {
