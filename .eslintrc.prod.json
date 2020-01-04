@@ -1,0 +1,7 @@
+{
+  "rules": {
+    "no-debugger": "error",
+    "no-console": ["error", { "allow": ["warn", "error"] }],
+    "no-unused-vars": 2
+  }
+}
