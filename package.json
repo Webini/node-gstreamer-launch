@@ -1,6 +1,6 @@
 {
   "name": "node-gstreamer-launch",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "gst-launch-1.0 helper for node",
   "main": "src/index.js",
   "scripts": {
