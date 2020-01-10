@@ -2,7 +2,7 @@
 
 You must have `gst-launch-1.0` installed on your system (in package `gstreamer1.0-tools` for debian based distributions)
 
-`npm i node-gst-tools`
+`npm i node-gstreamer-launch`
 
 ## About
 
