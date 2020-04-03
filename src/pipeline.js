@@ -71,12 +71,12 @@ module.exports = function pipeline(firstItem) {
       if (debug) {
         /* eslint-disable-next-line */
         console.log(
-          `gst-launch-1.0 -e ${args.join(' ')} ${this.asArray().join(' ')}`,
+          `gst-launch-1.0 ${args.join(' ')} ${this.asArray().join(' ')}`,
         );
       }
       return spawn(
         'gst-launch-1.0',
-        ['-e', ...args, ...this.asArray()],
+        [...args, ...this.asArray()],
         spawnOptions,
       );
     },
